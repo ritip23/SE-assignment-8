@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission</title>
+</head>
+<body style="background-color: #f9f9f9; font-family: Arial, sans-serif; padding: 20px; display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <div style="background-color: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); max-width: 500px; width: 100%;">
+        <h1 style="text-align: center; border-bottom: 2px solid #4CAF50; padding-bottom: 10px; margin-bottom: 20px;">Fill the Form</h1>
+        <form action="/submit-form" method="POST">
+            <div style="margin-bottom: 15px;">
+                <label for="name" style="display: block; margin-bottom: 5px;">Name:</label>
+                <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label for="email" style="display: block; margin-bottom: 5px;">Email ID:</label>
+                <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label for="mis" style="display: block; margin-bottom: 5px;">MIS No:</label>
+                <input type="number" id="mis" name="mis" required pattern="\d+" title="Please enter only digits" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label for="address" style="display: block; margin-bottom: 5px;">Address:</label>
+                <input type="text" id="address" name="address" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label for="dob" style="display: block; margin-bottom: 5px;">DOB:</label>
+                <input type="date" id="dob" name="dob" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label for="department" style="display: block; margin-bottom: 5px;">Department:</label>
+                <input type="text" id="department" name="department" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label for="phone" style="display: block; margin-bottom: 5px;">Phone No:</label>
+                <input type="tel" id="phone" name="phone" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label for="cgpa" style="display: block; margin-bottom: 5px;">CGPA:</label>
+                <input type="number" id="cgpa" name="cgpa" step="0.01" required pattern="\d+(\.\d{1,2})?" title="Please enter a valid CGPA (e.g., 3.75)" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label for="bloodGroup" style="display: block; margin-bottom: 5px;">Blood Group:</label>
+                <input type="text" id="bloodGroup" name="bloodGroup" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label for="personalEmail" style="display: block; margin-bottom: 5px;">Personal Email ID:</label>
+                <input type="email" id="personalEmail" name="personalEmail" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label for="batchNo" style="display: block; margin-bottom: 5px;">Batch No:</label>
+                <input type="text" id="batchNo" name="batchNo" required pattern="[a-zA-Z0-9]+" title="Please enter only letters and numbers" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+            </div>
+
+            <div style="text-align: center;">
+                <input type="submit" value="Submit" style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px;">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
